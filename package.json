@@ -1,0 +1,11 @@
+{
+  "name": "Dall-E-Test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Thanatoslayer6 <Thanatoslayer6@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.1.0"
+  }
+}
