@@ -4,12 +4,9 @@ const { Configuration, OpenAIApi } = require("openai");
 const fs = require('fs');
 require('dotenv').config()
 
-// const key = process.env.OPENAI_API_KEY;
-console.log(process.env.OPENAI_KEY)
-const configuration = new Configuration({
+const openai = new OpenAIApi(new Configuration({
     apiKey: process.env.OPENAI_KEY
-});
-const openai = new OpenAIApi(configuration);
+}));
 
 const predict = async function () {
     const response = await openai.createImage({
